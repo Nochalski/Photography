@@ -27,7 +27,6 @@ body {
 }
 
 header {
-    width: ;
     margin: auto;
     background-image: url(img/header.jpg);
     background-size: 80vw;
@@ -42,6 +41,7 @@ header {
 .bg {
     font-family: 'Playfair Display', serif;
     position: absolute;
+    width: 40vw;
     bottom: 5px;
     left: 5px;
     color: #b6b6b6;
@@ -49,11 +49,13 @@ header {
 }
 
 .logoText {
-    font-size: 35px;
+    font-size: 45px;
+    text-align: center;
 }
 
 .logoTextUnder {
-    font-size: 15px;
+    width: 40vw;
+    font-size: 17px;
     text-align: center;
 }
 .logoTextUnder {
