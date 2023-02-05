@@ -2,6 +2,8 @@
 font-family: 'Josefin Sans', sans-serif; 
 font-family: 'Playfair Display', serif;
  */
+
+
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
@@ -10,6 +12,9 @@ font-family: 'Playfair Display', serif;
     padding: 0;
     box-sizing: border-box;
 }
+
+
+
 
 html {
     font-family: 'Josefin Sans', sans-serif;
@@ -24,6 +29,10 @@ body {
 .wrap {
     width: 80vw;
     margin: 10px auto 0;
+}
+
+main {
+    color: black;
 }
 
 header {
@@ -58,13 +67,14 @@ header {
     font-size: 17px;
     text-align: center;
 }
+
 .logoTextUnder {
     overflow: hidden;
     text-align: center;
-  }
-  
-  .logoTextUnder:before,
-  .logoTextUnder:after {
+}
+
+.logoTextUnder:before,
+.logoTextUnder:after {
     background-color: #b6b6b6;
     content: "";
     display: inline-block;
@@ -72,17 +82,17 @@ header {
     position: relative;
     vertical-align: middle;
     width: 50%;
-  }
-  
-  .logoTextUnder:before {
+}
+
+.logoTextUnder:before {
     right: 0.5em;
     margin-left: -50%;
-  }
-  
-  .logoTextUnder:after {
+}
+
+.logoTextUnder:after {
     left: 0.5em;
     margin-right: -50%;
-  }
+}
 
 .line {
     width: 100%;
@@ -106,10 +116,12 @@ li {
     float: left;
     list-style: none;
 }
+
 li.social {
     float: right;
     list-style: none;
 }
+
 a {
     display: block;
     width: 100px;
@@ -123,17 +135,20 @@ a {
     padding-top: 8px;
     background-color: #262626;
 }
-.social a{
+
+.social a {
     width: 30px;
     font-size: 16px;
     padding-top: 7px;
     transition: 0s;
 }
+
 a:hover {
     font-size: 18px;
     color: white;
     padding-top: 7px;
 }
+
 .social a:hover {
     padding-top: 5px;
 }
@@ -142,4 +157,65 @@ a:hover {
 main {
     height: 75vh;
     background-color: #F2F2F2;
+}
+
+@media screen and (max-width: 768px) {
+    .bg {
+        width: 50vw;
+    }
+
+    .logoText {
+        font-size: 20px;
+    }
+
+    .logoTextUnder {
+        font-size: 10px;
+        width: 50vw;
+    }
+
+    .wrap {
+        width: 100vw;
+    }
+
+    header {
+        background-size: 100vw;
+    }
+
+    main {
+        padding: 5px 10px;
+    }
+
+    nav {
+
+        height: 25px;
+        background-color: #262626;
+        position: relative;
+        font-size: 20px;
+        font-weight: 100;
+        padding-right: 2px;
+    }
+
+    a {
+
+        width: 60px;
+        font-size: 16px;
+        line-height: 18px;
+        padding-top: 5px;
+    }
+
+    .social a {
+        width: 25px;
+        font-size: 18px;
+        padding-top: 4px;
+        transition: 0s;
+    }
+
+    a:hover {
+        font-size: 18px;
+        padding-top: 6px;
+    }
+
+    .social a:hover {
+        padding-top: 5px;
+    }
 }
