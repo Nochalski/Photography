@@ -265,7 +265,7 @@ main {
         width: 80px;
         font-size: 21px;
         line-height: 25px;
-        padding-top: 5px;
+        padding-top: 6px;
         margin-left: 10px;
     }
 
@@ -276,8 +276,8 @@ main {
     }
 
     a:hover {
-        font-size: 23px;
-        padding-top: 8px;
+        font-size: 21px;
+        padding-top: 6px;
     }
 
     .social a:hover {
