@@ -44,7 +44,7 @@ header {
     height: calc(30vw / (53 / 35));
     position: relative;
     color: #262626;
-    margin-bottom: 4px;
+    margin-bottom: 3px;
 }
 
 .bg {
@@ -167,7 +167,6 @@ main {
 
     header {
         background-size: 100vw;
-        margin-bottom: 4px;
         height: calc(40vw / (53 / 35));
     }
 
@@ -236,6 +235,7 @@ main {
 
     header {
         height: calc(55vw / (53 / 35));
+        margin-bottom: 2px;
     }
 
     .bg {
@@ -262,17 +262,18 @@ main {
     }
 
     a {
-        width: 80px;
+        width: 75px;
         font-size: 21px;
         line-height: 25px;
         padding-top: 6px;
-        margin-left: 10px;
+        margin-left: 6px;
     }
 
     .social a {
-        width: 35px;
-        font-size: 23px;
+        width: 25px;
+        font-size: 21px;
         padding-top: 6px;
+
     }
 
     a:hover {
