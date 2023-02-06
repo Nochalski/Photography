@@ -125,9 +125,9 @@ a {
     line-height: 23px;
     text-align: center;
     text-decoration: none;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     transition: 0.2s;
-    padding-top: 5px;
+    padding-top: 4px;
     background-color: #262626;
 }
 
@@ -139,9 +139,9 @@ a {
 }
 
 a:hover {
-    font-size: 21px;
+    font-size: 20px;
     color: white;
-    padding-top: 5px;
+    padding-top: 4px;
 }
 
 .social a:hover {
@@ -209,8 +209,8 @@ main {
     }
 
     a:hover {
-        font-size: 22px;
-        padding-top: 8px;
+        font-size: 21px;
+        padding-top: 7px;
     }
 
     .social a:hover {
@@ -256,24 +256,23 @@ main {
     }
 
     nav {
-
         height: 35px;
         padding-right: 5px;
         padding-left: 3px;
     }
 
     a {
-
         width: 80px;
-        font-size: 23px;
+        font-size: 21px;
         line-height: 25px;
-        padding-top: 8px;
+        padding-top: 5px;
+        margin-left: 10px;
     }
 
     .social a {
         width: 35px;
-        font-size: 25px;
-        padding-top: 5px;
+        font-size: 23px;
+        padding-top: 6px;
     }
 
     a:hover {
