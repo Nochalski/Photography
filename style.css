@@ -250,6 +250,7 @@ main {
         left: 0;
         top: 2px;
         width: 100vw;
+        background-color: #F2F2F2;
     }
 
     header {
