@@ -7,6 +7,14 @@ font-family: 'Playfair Display', serif;
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
 * {
     margin: 0;
     padding: 0;
