@@ -388,6 +388,17 @@ main {
     @media (max-width: 700px) {
         .menu-button-container {
             display: flex;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .menu-button-container:focus {
+            outline: none !important;
         }
 
         .menu {
