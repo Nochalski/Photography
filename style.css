@@ -42,7 +42,7 @@ header {
     background-size: 80vw;
     background-position: right 35% bottom 75%;
     background-repeat: no-repeat;
-    height: calc(30vw / (53 / 35));
+    height: calc(60vh / (53 / 35));
     position: relative;
     color: #262626;
     margin-bottom: 3px;
@@ -172,7 +172,7 @@ main {
 
     header {
         background-size: 100vw;
-        height: calc(40vw / (53 / 35));
+        height: calc(35vh / (53 / 35));
     }
 
     .bg {
@@ -236,7 +236,7 @@ main {
 
     header {
 
-        height: calc(25vw / (53 / 35));
+        height: calc(50vh / (53 / 35));
     }
 
     a {
@@ -264,7 +264,7 @@ main {
 
     header {
         background-size: 100vw;
-        height: calc(25vw / (53 / 35));
+        height: calc(50vh / (53 / 35));
     }
 
     .bg {
@@ -339,7 +339,7 @@ main {
     }
 
     header {
-        height: calc(50vw / (53 / 35));
+        height: calc(25vh / (53 / 35));
         margin-bottom: 2px;
     }
 
@@ -360,7 +360,7 @@ main {
 
     main {
         padding: 5px 10px;
-        margin-top: calc(50vw / (53 / 35) + 60px);
+        margin-top: calc(28vh / (53 / 35) + 60px);
     }
 
     nav {
