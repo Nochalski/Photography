@@ -240,6 +240,7 @@ main {
 
     .bg {
         width: 50vw;
+        bottom: 12px; 
     }
 
     .logoText {
