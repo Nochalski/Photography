@@ -14,9 +14,6 @@ font-family: 'Playfair Display', serif;
     box-sizing: border-box;
 }
 
-
-
-
 html {
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -29,11 +26,6 @@ body {
 .wrap {
     width: 80vw;
     margin: 10px auto 0;
-}
-
-main {
-    color: black;
-    padding: 5px 10px;
 }
 
 header {
@@ -57,12 +49,12 @@ header {
     letter-spacing: 1px;
 }
 
-.logoText {
+.logo-text {
     font-size: 45px;
     text-align: center;
 }
 
-.logoTextUnder {
+.logo-text-under {
     width: 40vw;
     font-size: 17px;
     text-align: center;
@@ -70,8 +62,8 @@ header {
     letter-spacing: 5px;
 }
 
-.logoTextUnder:before,
-.logoTextUnder:after {
+.logo-text-under:before,
+.logo-text-under:after {
     background-color: #b6b6b6;
     content: "";
     display: inline-block;
@@ -81,12 +73,12 @@ header {
     width: 50%;
 }
 
-.logoTextUnder:before {
+.logo-text-under:before {
     right: 0.5em;
     margin-left: -50%;
 }
 
-.logoTextUnder:after {
+.logo-text-under:after {
     left: 0.5em;
     margin-right: -50%;
 }
@@ -122,7 +114,9 @@ li.social {
     list-style: none;
 }
 
-a {
+a.menu-left,
+a.menu-social,
+a.menu-down {
     display: block;
     width: 100px;
     font-size: 18px;
@@ -134,31 +128,46 @@ a {
     transition: 0.2s;
     padding-top: 4px;
     background-color: #262626;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-.social a {
-    width: 30px;
-    font-size: 18px;
-    padding-top: 5px;
-    transition: 0s;
-}
-
-a:hover {
-    font-size: 20px;
+a.menu-left:hover {
+    font-size: 22px;
     color: white;
     padding-top: 4px;
 }
 
-.social a:hover {
-    padding-top: 5px;
-    color: white;
+a.menu-social {
+    width: 40px;
+    font-size: 20px;
+    padding-top: 6px;
+    transition: 0s;
 }
 
+a.menu-social:hover {
+    font-size: 22px;
+    color: white;
+    padding-top: 4px;
+}
 
 main {
     height: 75vh;
     background-color: #F2F2F2;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    padding: 5px auto;
+    text-align: justify;
 }
+
 
 /* @media foe screens smaller than 1024px PORTRAIT
 */
@@ -179,18 +188,18 @@ main {
         width: 50vw;
     }
 
-    .logoText {
+    .logo-text {
         font-size: 40px;
     }
 
-    .logoTextUnder {
+    .logo-text-under {
         font-size: 20px;
         width: 50vw;
     }
 
     nav {
 
-        height: 35px;
+        height: 40px;
         background-color: #262626;
         position: relative;
         font-weight: 100;
@@ -198,28 +207,27 @@ main {
         padding-left: 5px;
     }
 
-    a {
+    a.menu-left {
 
-        width: 80px;
-        font-size: 18px;
-        line-height: 23px;
-        padding-top: 7px;
+        width: 100px;
+        font-size: 25px;
+        padding-top: 9px;
     }
 
-    .social a {
-        width: 35px;
-        font-size: 22px;
-        padding-top: 6px;
+    a.menu-left:hover {
+        font-size: 25px;
+        padding-top: 22px;
     }
 
-    a:hover {
-        font-size: 21px;
-        padding-top: 7px;
+    a.menu-social {
+        width: 42px;
+        font-size: 24px;
+        padding-top: 8px;
     }
 
-    .social a:hover {
-        padding-top: 6px;
-        font-size: 22px;
+    a.menu-social:hover {
+        padding-top: 8px;
+        font-size: 24px;
     }
 
     main {
@@ -239,11 +247,10 @@ main {
         height: calc(50vh / (53 / 35));
     }
 
-    a {
+    .menu-left {
 
         width: 80px;
-        font-size: 18px;
-        line-height: 23px;
+        font-size: 23px;
         padding-top: 7px;
     }
 }
@@ -271,11 +278,11 @@ main {
         width: 50vw;
     }
 
-    .logoText {
+    .logo-text {
         font-size: 30px;
     }
 
-    .logoTextUnder {
+    .logo-text-under {
         font-size: 15px;
         width: 50vw;
     }
@@ -287,35 +294,36 @@ main {
         position: relative;
         font-weight: 100;
         padding-right: 5px;
-        padding-left: 5px;
+        padding-left: 10px;
     }
 
-    a {
+    a.menu-left {
 
-        width: 80px;
-        font-size: 18px;
-        line-height: 23px;
-        padding-top: 7px;
-    }
-
-    .social a {
-        width: 35px;
+        width: 85px;
         font-size: 22px;
         padding-top: 6px;
+
     }
 
-    a:hover {
+    a.menu-social {
+        width: 35px;
+        font-size: 25px;
+        padding-top: 5px;
+    }
+
+    .menu-left:hover {
         font-size: 21px;
         padding-top: 7px;
     }
 
-    .social a:hover {
+    a.menu-social:hover {
         padding-top: 6px;
         font-size: 22px;
     }
 
     main {
         padding: 5px 10px;
+
     }
 }
 
@@ -348,19 +356,19 @@ main {
         bottom: 10px;
     }
 
-    .logoText {
+    .logo-text {
         font-size: 26px;
         margin-left: 5px;
     }
 
-    .logoTextUnder {
+    .logo-text-under {
         font-size: 17px;
         width: 50vw;
     }
 
     main {
         padding: 5px 10px;
-        margin-top: calc(28vh / (53 / 35) + 60px);
+        margin-top: calc(24vh / (53 / 35) + 60px);
     }
 
     nav {
@@ -369,23 +377,22 @@ main {
         padding-left: 3px;
     }
 
-    .menu-left {
+    a.menu-left {
         display: none;
     }
 
 
 
-    .social a {
-        width: 40px;
-        font-size: 26px;
-        padding-top: 9px;
+    a.menu-social {
+        width: 45px;
+        font-size: 30px;
+        padding-top: 8px;
         margin-right: 5px;
-
     }
 
-    .social a:hover {
-        padding-top: 9px;
-        font-size: 26px;
+    a.menu-social:hover {
+        padding-top: 8px;
+        font-size: 30px;
     }
 
     /* Hamburger MENU */
@@ -402,8 +409,11 @@ main {
     }
 
     .hamburger-text {
+        display: flex;
         padding: 11px 0 0 5px;
-        font-size: 1.2rem
+        font-size: 25px;
+        color: #F2F2F2;
+
     }
 
     .menu {
@@ -471,7 +481,7 @@ main {
         transform: rotate(-405deg);
     }
 
-    @media (max-width: 700px) {
+    @media (max-width: 767px) {
         .menu-button-container {
             display: flex;
             -webkit-tap-highlight-color: transparent;
@@ -527,7 +537,7 @@ main {
             border-bottom: 1px solid #595959;
         }
 
-        .menu-down {
+        a.menu-down {
             width: 80px;
             font-size: 20px;
             line-height: 23px;
